@@ -13,7 +13,7 @@ draggables.forEach(draggable=>{
 myDivs.forEach(myDiv=>{
     myDiv.addEventListener("dragover",(e)=>{
         e.preventDefault()
-        const afterElement=getAfterElement(myDiv,e.clientY)
+        const afterElement=getAfterElement(myDiv , e.clientY)
         const draggable=document.querySelector(".draging")
         if(afterElement==null){
             myDiv.appendChild(draggable)
